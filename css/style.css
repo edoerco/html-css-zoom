@@ -115,10 +115,6 @@ footer {
 /* footer */
 .option-left {
     width: 12%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    color: #dcdcdc;
     margin-left: 10px;
 }
 
@@ -140,19 +136,29 @@ footer {
 
 .option-center {
     width: 50%;
-    display: flex;
+}
+
+.option-right {
+    width: 10%;
+    background-color: #4a4b4d;
+}
+
+.option-right p {
+    color: red;
+    margin: auto;
+}
+
+.option-left,
+.option-center {
     align-items: center;
     justify-content: space-around;
     color: #dcdcdc;
 }
 
-.option-right {
-    width: 10%;
-}
-
 .option-left,
 .option-center,
 .option-right {
+    display: flex;
     height: 100%;
 }
 /* fine footer */
