@@ -13,7 +13,7 @@ main {
     display: flex;
     width: 100%;
     height: calc(100vh - 100px);
-    /* background-color: black; */
+    background-color: black;
 }
 
 footer {
@@ -21,9 +21,14 @@ footer {
     height: 100px;
     background-color: #222326;
 }
+
+.active {
+    border: 2px solid yellow;
+}
 /* fine common */
 
 /* main */
+/* colonne laterali */
 .col-left,
 .col-right {
     width: 5%;
@@ -47,11 +52,43 @@ footer {
 .fa-caret-right {
     color: #2ebaff;
 }
+/* fine colonne laterali */
 
+/* colonna centrale */
 .col-center {
-    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     height: 100%;
+    padding: 3% 0;
+   
 }
+
+.person {
+    position: relative;
+    width: calc(20% - 10px);
+    height: calc(20% - 8px);
+    margin: 4px auto;
+   
+}
+
+.person img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* fine colonna centrale */
 /* fine main */
 
 /* footer */
